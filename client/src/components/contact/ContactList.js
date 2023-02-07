@@ -6,7 +6,7 @@ const ContactsList = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await axios.get('http://localhost:3001/contacts');
+      const result = await axios.get('/api/contacts');
       setContacts(result.data);
       console.log(result.data);
     };

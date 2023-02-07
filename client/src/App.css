@@ -41,6 +41,13 @@ img {
   width: 100%;
 }
 
+/* Cards */
+.card {
+  padding: 1rem;
+  border: #ccc 1px dotted;
+  margin: 0.7rem 0;
+}
+
 /* Utilities */
 .container {
   max-width: 1100px;
@@ -163,12 +170,14 @@ img {
   }
 
   .navbar h1 {
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.4rem;
+    font-size: 1.6em;
   }
 
   .navbar ul {
     text-align: center;
     justify-content: center;
   }
+
 }
 

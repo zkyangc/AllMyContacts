@@ -32,7 +32,7 @@ db.serialize(() => {
   app.use(express.json());
   
   // endpoint to retrieve all contacts
-  app.get('/contacts', (req, res) => {
+  app.get('/api/contacts', (req, res) => {
     db.all('SELECT * FROM contacts', (err, rows) => {
       if (err) {
         return res.status(500).json({ error: err.message });
@@ -42,7 +42,7 @@ db.serialize(() => {
   });
   
   // endpoint to add a new contact
-  app.post('/contacts', (req, res) => {
+  app.post('/api/contacts', (req, res) => {
     const { name, phone } = req.body;
     db.run(
       'INSERT INTO contacts (name, phone) VALUES (?, ?)',
@@ -57,7 +57,7 @@ db.serialize(() => {
   });
   
   // endpoint to update a contact by id
-  app.put('/contacts/:id', (req, res) => {
+  app.put('/api/contacts/:id', (req, res) => {
     const { name, phone } = req.body;
     db.run(
       'UPDATE contacts SET name = ?, phone = ? WHERE id = ?',
@@ -72,7 +72,7 @@ db.serialize(() => {
   });
   
   // endpoint to delete a contact by id
-  app.delete('/contacts/:id', (req, res) => {
+  app.delete('/api/contacts/:id', (req, res) => {
     db.run('DELETE FROM contacts WHERE id = ?', req.params.id, function(err) {
       if (err) {
         return res.status(400).json({ error: err.message });
