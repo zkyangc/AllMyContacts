@@ -22,8 +22,8 @@ docker run -d -p 3000:3000 --name allmycontacts -e DANGEROUSLY_DISABLE_HOST_CHEC
 
 ## Sample vCard Data
 
-`Sample vCards data can be found [here](https://docs.fileformat.com/email/vcf/). Only v4.0 is tested.
+Sample vCards data can be found [here](https://docs.fileformat.com/email/vcf/). Only v4.0 is tested.
 
-### Security
+## Security
 
 Please avoid uploading any personal data as there is no authentication implemented yet and, thus contacts information is accessible by anyone. Additionally, SSL is not yet implemented, so it's not secure from ISPs either.
