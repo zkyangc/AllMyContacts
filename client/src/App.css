@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-
 /* Global Styles */
 :root {
   --primary-color: #003699;
@@ -56,49 +55,6 @@ img {
   padding: 0 2rem;
 }
 
-/* Text Styles*/
-.x-large {
-  font-size: 4rem;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-}
-
-.large {
-  font-size: 3rem;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-}
-
-.lead {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-primary {
-  color: var(--primary-color);
-}
-
-.text-dark {
-  color: var(--dark-color);
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.text-left {
-  text-align: left;
-}
-
-/* navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -163,7 +119,6 @@ img {
     font-size: 1rem;
   }
 
-  /* Navbar */
   .navbar {
     display: block;
     text-align: center;
