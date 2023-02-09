@@ -14,7 +14,7 @@ The demo of this app is deployed on Amazon EC2 and is aacessible with [this link
 
 ## Deployment
 
-The `Dockerfile` is provided and the image is posted on [Docker Hub](https://hub.docker.com/repository/docker/zkyang96/allmycontacts/tags?page=1&ordering=last_updated).
+The `Dockerfile` is provided and the image is posted on [Docker Hub](https://hub.docker.com/r/zkyang96/allmycontacts/tags).
 
 ```bash
 docker run -d -p 3000:3000 --name allmycontacts -e DANGEROUSLY_DISABLE_HOST_CHECK=true --restart=always zkyang96/allmycontacts:latest
